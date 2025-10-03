@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #ffffff;
     color: #000000;
@@ -34,54 +38,123 @@ a:hover {
     font-weight: 500;
 }
 
-.div1 {
-    width: 400px;
+footer {
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0 1rem;
+}
+
+.header {
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    padding: 0 1rem;
 }
 
 .header-hr {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     margin: 0 auto 50px;
 }
 
-.div2 {
-    width: 75%;
-    margin-left: 12.5%;
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 3rem;
-}
-
-.div3 {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.div3 > p {
-    margin: 0;
+    gap: 2.5rem;
+    padding: 0 1rem;
 }
 
 .thumbnail {
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
     height: auto;
+    display: block;
 }
 
-.movie-title {
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.movie-info > p {
+    margin: 0;
+}
+
+.movie-link {
     font-size: 1.5rem;
     font-weight: 400;
 }
 
-.rating {
+.movie-rating {
     color: #ff7f50;
     font-size: 1.2rem;
     padding: 5px 0 15px;
+    font-style: italic;
+    font-weight: 500;
 }
 
 .movie-hr {
     width: 75%;
     margin: 50px auto;
+}
+
+.container-2 {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.movie-title {
+    font-size: 2.25rem;
+    font-weight: 500;
+}
+
+.container-2 > .movie-info > .movie-rating {
+    font-size: 1.5rem;
+}
+
+.container-2 > .movie-info > .thumbnail {
+    max-width: 300px;
+    margin: 5px auto 25px;
+}
+
+.container-2 > .movie-info > .movie-description {
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.movie-review-text {
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.movie-review {
+    margin-top: 15px;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+table {
+    margin: auto;
+    text-align: left;
 }
